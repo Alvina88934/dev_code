@@ -6,9 +6,9 @@ terraform {
     }
   }
   backend "azurerm" {
-   resource_group_name = "bagrg3-resources"
-    storage_account_name = "bagstorage24"                              # Can be passed via `-backend-config=`"storage_account_name=<storage account name>"` in the `init` command.
-    container_name       = "bagcontainer"                               # Can be passed via `-backend-config=`"container_name=<container name>"` in the `init` command.
+   resource_group_name = "Rg_123"
+    storage_account_name = "aastg"                              # Can be passed via `-backend-config=`"storage_account_name=<storage account name>"` in the `init` command.
+    container_name       = "aacontain123"                               # Can be passed via `-backend-config=`"container_name=<container name>"` in the `init` command.
     key                  = "variable.terraform.tfstate"                # Can be passed via `-backend-config=`"key=<blob key name>"` in the `init` command.
   }
 }
